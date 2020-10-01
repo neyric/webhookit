@@ -6,7 +6,7 @@
  * 	- configure various middleware
  * 	- load controllers & helpers
  */
-var express = require('express'),
+let express = require('express'),
 	fs = require('fs'),
 	Db = require('mongodb').Db,
 	Server = require('mongodb').Server,
@@ -14,7 +14,7 @@ var express = require('express'),
 	mongoStore = require('connect-mongodb');
 
 // express server
-var app = express.createServer();
+const app = express.createServer();
 app.root = __dirname;
 
 // Load config file
